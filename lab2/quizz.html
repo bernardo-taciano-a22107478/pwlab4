@@ -1,0 +1,152 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+    
+    <!-- FONTS CONNECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- FILE CSS CONNECTION-->
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- ICON JS CONNECTION-->
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <h1 class="title">Milan City Quizz</h1>
+        <figure>
+            <img src="images/milanriver.jpg" alt="Milan River" title="Milan River">
+            <figcaption>Fig.1 Milan River Po.</figcaption>
+        </figure>
+        
+    </header>
+
+    <!-- NAV SECTION -->
+    <nav>
+            <a class="nav" href="index.html" target="_blank"> <i class="fa-solid fa-house"></i> <b>Introduction</b></a>
+            <a class="nav" href="local.html" target="_blank"><i class="fa-solid fa-map"></i> <b>Location</b></a>
+            <a class="nav" href="multimedia.html" target="_blank"><i class="fa-solid fa-camera"></i> <b>Multimedia</b></a>
+            <a class="nav" href="info.html" target="_blank"><i class="fa-solid fa-circle-info"></i> <b>Information</b></a>
+            <!--<a class="nav" href="quizz.html" target="_blank"><i class="fa-solid fa-circle-question"></i> <b>Quizz</b></a>-->
+            <a class="nav" href="html5-css.html" target="_blank"><i class="fa-solid fa-code"></i> <b>Html 5 & CSS</b></a>           
+            <a class="nav" href="/lab3/index.html"><i class="fa-solid fa-code"></i> <b>Lab3</b></a>
+            <a class="nav" href="/index.html" ><i class="fa-solid fa-code"></i> <b>Lab4</b></a>
+    </nav>
+
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- WHATS GOING TO HAPPEN IN THIS PAGE -->
+        <section>
+            <h3 class="specific-title">Quizz</h3>
+            <p>
+                In this page you will be asked questions about the city of Milan in 
+                order to check your knowledge of the previously presented city.
+            </p>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section>
+            <form action="mailto: bernardotaciano1@gmail.com" method="POST" enctype="multipart/form-data">
+                <fieldset id="fieldset1">
+                    <legend>Shows you know the city</legend>
+
+                    <fieldset id="fieldset2"> 
+                        <legend>Info</legend>
+                        <label for="fname">Nome:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" maxlength="20" autofocus required><br><br>
+                        <label for="lname">Apelido:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" size="30" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off" required><br><br>
+                    </fieldset>
+
+                    <fieldset id="fieldset3">
+                        <legend>Questions</legend>
+                        <h4>Q1: What is the city of milan known for? (Fashion / History)</h4>
+                        <input type="text" name="theater">
+                        
+                        <h4>Q2: When was the Arch of Peace monument inaugurated?</h4>
+                        <label for="archinaugurated"></label> <!-- September 10, 1838 -->
+                        <input type="date" id="foundation" name="archinaugurated">
+                        
+                        <h4>Q3: What is the famous fashion brand that has its headquarters in Milan?</h4>
+                        <input type="checkbox" id="foundedBrand1" name="foundedBrand" value="Prada">
+                        <label for="foundedBrand1">Prada</label>
+                        <input type="checkbox" id="foundedBrand2" name="foundedBrand" value="Dior">
+                        <label for="foundedBrand2">Dior</label>
+                        <br>
+
+                        <h4>Q4: What is the name of the famous football club based in Milan?</h4>
+                        <input type="radio"  id="footballclub1" name="foundedBrand" value="Prada">
+                        <label for="footballclub1">AC Milan</label>
+                        
+                        <input type="radio" id="footballclub2" name="foundedBrand" value="Dior">
+                        <label for="footballclub2">Juventus FC</label>
+                        <br>
+
+                        <h4>Q5: What color is highlighted the most in the milan football symbol?</h4>
+                        <input type="color" id="colorMilan" name="colorMilan" value="#000000">
+                        
+                        <br>
+
+                        <h4>Q6: What is the average summer temperature in Milan?</h4>
+                        <input type="number" id="avgtemperature" name="avgtemperature" min="1" max="35">
+                        
+                        <br>
+                        <h4>Q7: What is the average winter temperature in Milan?</h4>
+                        <input type="range" id="avgmintemperature" name="avgmintemperature" min="0" max="10">
+                        
+                        <br>
+                        <h4>Q8: What is the name of the famous opera house in Milan?</h4>
+                        <label for="cars"></label>
+                        <select name="operaHouse" id="operaHouse">
+                            <option value="lascala">La Scala</option>
+                            <option value="teatroregio">Teatro Regio</option>
+                            <option value="teatroallascala">Teatro alla Scala</option>
+                            <option value="teatrodellapergola">Teatro della Pergola</option>
+                        </select>
+                        <br>
+                        <h4>Q9: Which river runs through Milan?</h4>
+                        <input list="rivermilan" id="river-choice" name="river-choices">
+
+                        <datalist id="rivermilan">
+                            <option value="Tiber">
+                            <option value="Arno">
+                            <option value="Po">
+                            <option value="Adda">
+                        </datalist>
+
+                        <br>
+                        <h4>Q10: Click in the Cathedral of Milan</h4>
+                        <input type="image" src="images/cathedral.jpg" alt="Submit">
+                    
+
+                        <br>
+                        <h4>Insert a comment</h4>
+                        <textarea name="comment" id="textcomment" cols="30" rows="10" placeholder="Insert comment here"></textarea>
+                        
+                        
+                        <br>
+                        Send Answers
+                        <input type="submit" name="submitresult" id="submitresult">
+                   </fieldset>
+
+                </fieldset>
+                
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        Bernardo Taciano - a22107478 | 2º Ano - Engenharia Informática
+    </footer>
+</body>
+</html>

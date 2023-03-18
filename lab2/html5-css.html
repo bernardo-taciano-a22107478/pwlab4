@@ -1,0 +1,195 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 & CSS</title>
+    
+    <!-- FONTS CONNECTION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- FILE CSS CONNECTION-->
+    <link rel="stylesheet" href="/lab2/estilos.css">
+    
+    <!-- ICON JS CONNECTION-->
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">HTML 5 & CSS:</h1>
+        <img src="images/milanPictures.jpg" alt="Milan">
+        <figcaption>Fig.1 Milan City.</figcaption>
+    </header>
+
+    <nav>
+            <a class="nav" href="index.html" target="_blank"> <i class="fa-solid fa-house"></i> <b>Introduction</b></a>
+            <a class="nav" href="local.html" target="_blank"><i class="fa-solid fa-map"></i> <b>Location</b></a>
+            <a class="nav" href="multimedia.html" target="_blank"><i class="fa-solid fa-camera"></i> <b>Multimedia</b></a>
+            <a class="nav" href="info.html" target="_blank"><i class="fa-solid fa-circle-info"></i> <b>Information</b></a>
+            <a class="nav" href="quizz.html" target="_blank"><i class="fa-solid fa-circle-question"></i> <b>Quizz</b></a>
+            <!--<a class="nav" href="html5-css.html" target="_blank"><i class="fa-solid fa-code"></i> <b>Html 5 & CSS</b></a> -->      
+            <a class="nav" href="/lab3/index.html"><i class="fa-solid fa-code"></i> <b>Lab3</b></a>
+            <a class="nav" href="/index.html" ><i class="fa-solid fa-code"></i> <b>Lab4</b></a>
+    </nav>
+
+    <main>
+        <!-- HTML 5 SECTION -->
+        <section>
+            <h3 class="specific-title">What is HTML 5?</h3>
+            <p><b>HTML</b> stands for <span><b>H</b></span>yper  <span><b>T</b></span>ext  <span><b>M</b></span>arkup 
+                <span><b>L</b></span>anguage.  It is used to design web pages using a markup language.</p>
+        </section>
+
+        <section>
+            <table>
+                <tr>
+                    <th><b>Semantic Element</b></th>
+                    <th><b>Used</b></th>
+                    <th><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b>< header ></header></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on all pages at the top of each page.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< nav ></nav></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on all pages at the top of each page to redirect to other pages.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< main ></main></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on all pages to include major sections within this element.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< article ></b></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Not Used.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< section ></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on all pages in order to separate the various contents addressed on each page.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< aside ><b></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Not Used.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< footer ></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on all pages at the bottom to reference the author of the project.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< details ></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used on the local.html below the map, to reference a small interesting but not very important fact.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< meter ></b></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Not Used.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< progress ></b></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Not Used.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< abbr ></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used in the html5-css.html page to abbreviate the word HTML.</td>
+                </tr>
+
+                <tr>
+                    <td><b>< address ></b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Implemented on all pages in the <b>< footer ></b> tag to reference the author's contact.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 class="specific-title">What is CSS?</h3>
+            <p><b>CSS</b> stands for <span><b>C</b></span>ascading  <span><b>S</b></span>tyle  <span><b>S</b></span>heets. 
+                It's a style language used to describe the presentation of a document written in
+                 <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+        </section>
+
+        <section>
+            <table>
+                <tr>
+                    <th><b>Selectors</b></th>
+                    <th><b>Used</b></th>
+                    <th><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b>*{ }</b> Universal </td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used in css file, to change font family and center align text.</td>
+                </tr>
+
+                <tr>
+                    <td><b>h1{ }</b> Type</td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used in css file, to refer to titles h1, footer, table, nav, body, img, input.</td>
+                </tr>
+
+                <tr>
+                    <td><b>.class{ }</b> Class</td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used in the css file, to refer to specific classes.</td>
+                </tr>
+
+                <tr>
+                    <td><b>#id{ }</b> Id</td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Very specific element, there can only be one and it was used to refer to each of the fieldsets in order to assign different background colors to them.</td>
+                </tr>
+
+                <tr>
+                    <td><b>ol[type="intro-description"]</b> Attribute</td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Specifically used to give background color to ordered list elements with type="intro-description".</td>
+                </tr>
+
+                <tr>
+                    <td><b>.nav:link{ }</b> Pseudo-Class</td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used to assign characteristics to navigation menu links, to assign colors, before, during and after they are clicked.</td>
+                </tr>
+
+                <tr>
+                    <td><b>p::first-letter</b></td>
+                    <td><i class="fa-solid fa-check"></i></td>
+                    <td>Used to assign characteristics to the first letter of the paragraph element.</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+   <br>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        Bernardo Taciano - a22107478 | 2º Ano - Engenharia Informática
+        <address>
+            <a href="mailto:bernardotaciano1@gmail.com">bernardotaciano1@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>

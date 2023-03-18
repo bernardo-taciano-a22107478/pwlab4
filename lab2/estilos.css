@@ -1,0 +1,174 @@
+*{ /*UNIVERSAL*/
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+body{ /*CHANGE BODY BG*/
+    background-color: rgb(219, 238, 255);
+    margin: 0;
+}
+
+h1{ /*CHANGE H1*/
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 20px;
+}
+
+footer{ /*FOOTER*/
+    background-color: rgb(152, 152, 152);
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+}
+
+table{ /*TABLE*/
+    margin: 20px auto;
+    border: 1px;
+}
+
+nav{ /*TIPO*/
+    padding: 20px;
+}
+
+img{ /*TIPO*/
+    border-radius: 20%;
+    border: 4px solid #ccc;
+}
+
+iframe {
+    border: 3px solid #999;
+}
+
+
+input {
+    /*display: block;*/
+    margin-bottom: 10px;
+    /*width: 100%;*/
+    padding: 10px;
+}
+
+th{
+    background-color: rgb(113, 229, 229);
+}
+
+.nav{ /*CLASSE*/
+    text-decoration: none;
+    color: rgb(6, 45, 174);
+    font-weight: bold;
+    margin: 20px
+}
+
+.specific-title{
+    color: rgb(0, 59, 110);
+}
+
+.title{
+    color: rgb(23, 36, 179);
+}
+
+#fieldset1{ /*ID*/
+    background-color: rgb(180, 250, 253);
+}
+
+#fieldset2{ /*ID*/
+    background-color: rgb(98, 227, 249);
+}
+
+#fieldset3{ /*ID*/
+    background-color: rgb(59, 170, 254);
+}
+
+#location{
+    width: 900px;
+    margin: 30px auto;
+}
+
+#poem{
+    font-size: 20px;
+}
+
+ol.myol{ 
+    display: inline-block;
+    padding: 10px 20px 10px 40px;
+}
+
+.myol li{ /*SELETORES DESCENDENTES*/
+    text-align: left;
+}
+
+
+ol[type="intro-description"] { /*ATRIBUTO*/
+    background: rgba(173, 173, 173, 0.350);
+}
+
+.nav:link{ /*PSEUDO-CLASSE*/
+    color: rgb(0, 37, 139);
+    font-style: normal;
+}
+
+.nav:visited{ /*PSEUDO-CLASSE*/
+    color: rgb(23, 85, 255);
+    font-style: italic;
+}
+
+.nav:hover{ /*PSEUDO-CLASSE*/
+    text-decoration: underline;
+    color: rgb(125, 155, 255);
+    font-style: normal;
+    font-size: 20px;
+}
+
+.nav:active{ /*PSEUDO-CLASSE*/
+    text-decoration: none;
+    color: rgb(6, 186, 231);
+    font-style: normal;
+}
+
+.nav:hover::before{
+    content: "-> ";
+}
+
+.nav:hover::after{
+    content: " <-";
+}
+
+p::first-letter{ /*PSEUDO-ELEMENTO FIRST LETTER QUIZZ PAGE*/
+    color: rgb(0, 47, 255);
+    font-size: 20px;
+    font-weight: 600;
+}   
+
+p::first-line{ /*PSEUDO-ELEMENTO FIRST LINE QUIZZ PAGE*/
+    background-color: rgb(175, 255, 255);
+}   
+
+li>a{ /*SELETORES FILHOS*/
+    text-decoration: none;
+    color: rgb(29, 80, 249);
+    font-weight: bolder;
+}
+
+h1~h3{ /*SELETORES ADJACENTES*/
+    font-weight: normal;
+}
+
+h2+img{ /*SELETORES IMEDIATAMENTE ADJACENTES*/
+    opacity: 0.8;
+}
+
+/*COLORS FOR TABLE PAR*/
+tr:nth-child(even) {
+    background-color: #d1d1d1;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+[title~="River"] { /*SELETORES DE ATRIBUTOS PÁGINA QUIZ*/
+    border: 5px solid rgb(190, 190, 190);
+}
+
+
+

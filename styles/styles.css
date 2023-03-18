@@ -1,0 +1,648 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: static;
+    top: 0;
+    background-color: #fff;
+    padding: 6px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.2)), url(/images/milanCat.jpg);
+
+    min-width: 20vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header > div > nav {
+    display: flex;
+    justify-content: center;
+}
+
+header > div > nav > a{
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+header > div > nav > a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header > div > nav > a:active{
+    color: #c3c3c3;
+}
+
+.hero-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 6vw;
+    font-weight: 600;
+}
+
+.hero-text h3 {
+    font-size: 1.85vw;
+    font-weight: 500;
+}
+
+.white-button {
+    min-width: 10vw;
+    min-height: 4vh;
+    margin-top: 20px;
+    background-color: rgb(0,0,0,0.0);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.white-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    cursor: pointer;
+}
+
+.facts {
+    text-align: center;
+    color: #1c1c1c;
+}
+
+.facts > h1 {
+    padding-top: 25px;
+    font-size: 3.5vw;
+}
+
+.facts > div{
+    padding: 30px 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facts > div > div {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 170px;
+    justify-content: center;
+}
+
+.icon{
+    color: rgb(60, 167, 196);
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover{
+    color: #15335d;
+}
+
+.facts > div > div > p{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+/* PARALLAX */
+
+.image1 {
+    background-image: url(/images/sky.jpg);
+}
+
+.image2 {
+    background-image: url(/images/Santa_Maria_delle_Grazie_Milan_2013.jpg);
+}
+
+.image3 {
+    background-image: url(/images/milanoview.jpg);
+}
+
+.image4 {
+    background-image: url(/images/lascala.jpg);
+}
+
+.image5 {
+    background-image: url(/images/nightPic.jpg);
+}
+
+.parallax {
+    margin: 0 30px;
+    min-height: 35vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    position: relative;
+    border-radius: 20px;
+}
+
+.image-container {
+    text-align: center;
+    padding: 40px 150px;
+}
+
+.image-container h1 {
+    color: #1c1c1c;
+    font-size: 3.5vw;
+}
+
+.image-container > div{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.image-container img {
+    min-width: 120px;
+    height: 50vh;
+    margin: 15px;
+    border-radius: 3%;
+    transition: box-shadow 0.5s ease;
+}
+
+.image-container img:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.422);
+}
+
+.btn-black {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+  
+.btn-black:hover {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-white {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+  
+.btn-white:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+footer {  
+  background-image: url(/images/reflectionWater.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container > h4 {
+    font-weight: 500;
+}
+
+
+/* PAGINA DO VIDEO.HTML */
+#video-bg {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+/* Estilo para a barra de texto */
+#barra-texto {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 20px;
+    font-size: 1.3vw;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Estilo para o texto dentro da barra */
+#texto {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
+/* PARALLAX PAGE */
+
+.text-container {
+    padding: 50px;
+    margin: 0 auto;
+    max-height: 20vw;
+    max-width: 70%;
+    height: 250px;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-size: 2.5vw;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.text-container p {
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+#motivational {
+    font-size: 2vw;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+
+.pictures-container {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.pictures-container * {
+    border-radius: 30px;
+}
+
+
+
+/* ANIMATIONS PAGE */
+
+.animations {
+    text-align: center;
+    margin: 0 80px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.animations h1 {
+    color: #738f90;
+}
+
+.logo {
+    display: inline-block;
+    margin: 20px;
+    height: 65px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.logo.rotate {
+    transition: transform 1s ease-in-out;
+}
+
+.logo.rotate:hover {
+    transform: rotate(360deg);
+}
+
+
+/* KEYFRAMES SECTION */
+
+.logo-keyframe {
+    width: 100px;
+    height: 100px;
+    animation: boxAnimation 5s infinite;
+}
+
+
+@keyframes boxAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* SVG FIGURAS */
+
+
+
+#my-svg {
+    width: 200px;
+    height: 180px;
+}
+
+#rect {
+    fill: #e74c3c;
+    animation: rectAnimation 2s infinite;
+    transform-origin: center;
+}
+
+#circle {
+    fill: #f1c40f;
+}
+
+#triangle {
+    fill: #2ecc71;
+    animation: triangleAnimation 2s infinite;
+    transform-origin: center;
+}
+
+@keyframes rectAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes triangleAnimation {
+    0% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+
+/* POEM SECTION */
+
+.poem {
+    margin: 20px 80px;
+    border-radius: 20px;
+    background-color: rgb(228, 243, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.poem h1 {
+    margin-top: 15px;
+}
+
+.quadra {
+    min-width: 420px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.quadra:hover {
+    background-color: #f9f9f9c5;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.line1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+  
+.line2 {
+    font-style: italic;
+    text-transform: uppercase;
+}
+  
+.line3 {
+    font-size: 0.9rem;
+}
+  
+.line4 {
+    color: #8b0000;
+    transform: rotate(7deg);
+}
+  
+.line4:hover {
+    font-size: 1.2rem;
+    color: #ff0000;
+    transform: rotate(0deg);
+}
+
+
+/* NAVBAR */
+
+/* NAVBAR */
+#title .container-fluid{
+    padding: 3% 15% 8%;
+    text-align: left;
+}
+
+.navbar-brand{
+    margin: 0 20px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.nav-item{
+    padding: 0px 15px;
+}
+
+.nav-link{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* RESPONSIVIDADE DE PÁGINA HOME */
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    /* HERO SECTION FOR ALL PAGES */
+
+    .hero-text {
+        width: 90vw;
+    }
+
+    .hero-text h1 {
+        font-size: 10vw;
+    }
+
+    .hero-text h3 {
+        font-size: 3.5vw;
+    }
+
+
+    .btn-white {
+        padding: 5px 10px;
+    }
+
+    /* */
+
+    .facts > div {
+        justify-content: center;
+    }
+
+    .facts > h1 {
+        font-size: 8vw;
+    }
+
+    .image-container h1 {
+        font-size: 8vw;
+    }
+
+    .image-container{
+        padding: 30px 0;
+    }
+
+    .image-container img{
+        width: 60vw;
+        height: 100%;
+        margin: 5px;
+    }
+
+    .image-container > div {
+        flex-direction: column;
+    }
+
+    .footer-container > h4 {
+        font-size: 2.5vw;
+    }
+
+    /* RESPONSIVIDADE DE PÁGINA PARALLAX */
+
+    .parallax {
+        margin-top: 20px;
+    }
+
+    .text-container {
+        padding: 20px 5px 5px 5px;
+    }
+
+    .text-container h1 {
+        padding: 0;
+    }
+
+    .text-container p {
+        font-size: 2vw;
+    }
+
+    .parallax {
+        min-height: 30vh;
+    }
+
+    .pictures-container {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #video-bg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #barra-texto {
+        top: 35vh;
+        padding: 0 20px;
+        height: 20vh;
+    }
+}
+
+
+
+/* RESPONSIVIDADE DE PÁGINA ANIMATIONS */
+
+@media screen and (max-width: 580px) { 
+
+    .animations {
+        padding: 15px;
+        margin: 0 15px;
+    }
+
+
+    .poem {
+        margin: 20px 15px;
+    }
+
+    .quadra {
+        min-width: 305px;
+    }
+
+    .poem h1 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .quadra p {
+        font-size: 4vw;
+    }
+
+    #video-bg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #barra-texto {
+        top: 26vh;
+        padding: 0 20px;
+        height: 13vh;
+    }
+}
+

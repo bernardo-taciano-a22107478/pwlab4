@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bernardo Taciano">
+    <meta name="description" content="Website about Milan">
+    <meta name="keywords" content="Fashion, Design, Milan, Travel, Peace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    
+    <!-- Css Files & MONTSERRAT FONTS -->
+    <link rel="icon" href="/images/animationIcon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand title" href="index.html">Milan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grid
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="grid1.html">Grid 1</a></li>
+                  <li><a class="dropdown-item" href="grid2.html">Grid 2</a></li>
+                  <li><a class="dropdown-item" href="grid3.html">Grid 3</a></li>
+                  <li><a class="dropdown-item" href="grid4.html">Grid 4</a></li>
+                  <li><a class="dropdown-item" href="grid5.html">Grid 5</a></li>
+                  <li><a class="dropdown-item" href="grid6.html">Grid 6</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Labs
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/lab2/index.html">Lab1 & 2</a></li>
+                    <li><a class="dropdown-item" href="/lab3/index.html">Lab3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="animations.html">Animations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parallax.html">Parallax</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="video.html">Video</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <div class="animations">
+        
+        <div>
+            <h1>DEISI Logos Animations</h1>
+            <p>Hover over the logos to see the scale and rotation animation:</p>
+            <img src="/images/deisi.svg" alt="Logo DEISI"  class="logo"></a>
+            <img src="/images/deisi.svg" alt="Logo DEISI" class="logo rotate">
+        </div>
+        <div class="keyframe-container">
+            <h1>DEISI Logos Keyframes</h1>
+            <img class="logo-keyframe" src="/images/deisi.svg" alt="Logo DEISI">
+        </div>
+        <div class="geometric-container">
+            <h1>DEISI Geometric Figures</h1>
+            <svg id="my-svg" viewBox="0 0 200 200">
+                <rect id="rect" x="10" y="10" width="100" height="100" />
+                <circle id="circle" cx="140" cy="60" r="30" />
+                <polygon id="triangle" points="130,130 170,170 90,170" />
+            </svg>
+        </div>
+    </div>
+
+
+    <div class="poem">
+        <h1>Amor é fogo que arde sem se ver - <em>Luís De Camões</em></h1>
+        <div class="quadra">
+            <p class="line1">Amor é um fogo que arde sem se ver</p>
+            <p class="line2">É ferida que dói, e não se sente;</p>
+            <p class="line3">É um contentamento descontente;</p>
+            <p class="line4">É dor que desatina sem doer;</p>
+        </div>
+        <div class="quadra">
+            <p class="line1">É um não querer mais que bem querer;</p>
+            <p class="line2">É solitário andar por entre a gente;</p>
+            <p class="line3">É nunca contentar-se de contente;</p>
+            <p class="line4">É cuidar que se ganha em se perder;</p>
+        </div>
+        <div class="quadra">
+            <p class="line1">É querer estar preso por vontade;</p>
+            <p class="line2">É servir a quem vence, o vencedor;</p>
+            <p class="line3">É ter com quem nos mata lealdade.</p>
+        </div>
+        <div class="quadra">
+            <p class="line1">Mas como causar pode seu favor</p>
+            <p class="line2">Nos corações humanos amizade,</p>
+            <p class="line3">Se tão contrário a si é o mesmo Amor?</p>
+        </div>
+      </div>
+
+    <footer>
+        <div class="footer-container">
+          <h4>By Bernardo Taciano | a22107478 | Engenharia Informática</h3>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>

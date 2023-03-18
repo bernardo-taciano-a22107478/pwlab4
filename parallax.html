@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bernardo Taciano">
+    <meta name="description" content="Website about Milan">
+    <meta name="keywords" content="Fashion, Design, Milan, Travel, Peace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    
+    <!-- Css Files & MONTSERRAT FONTS -->
+    <link rel="icon" href="/images/photo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand title" href="index.html">Milan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grid
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="grid1.html">Grid 1</a></li>
+                  <li><a class="dropdown-item" href="grid2.html">Grid 2</a></li>
+                  <li><a class="dropdown-item" href="grid3.html">Grid 3</a></li>
+                  <li><a class="dropdown-item" href="grid4.html">Grid 4</a></li>
+                  <li><a class="dropdown-item" href="grid5.html">Grid 5</a></li>
+                  <li><a class="dropdown-item" href="grid6.html">Grid 6</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Labs
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/lab2/index.html">Lab1 & 2</a></li>
+                    <li><a class="dropdown-item" href="/lab3/index.html">Lab3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="animations.html">Animations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="parallax.html">Parallax</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="video.html">Video</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <header class="image3">
+        <div class="hero-text">
+            <h1>Milan</h1>
+            <h3>Get to know Milan a little better</h3>
+        </div>
+    </header>
+
+    <div class="text-container">
+        <h1>Santa Maria delle Grazie</h1>
+        <p>Milan is home to the world-famous painting of The Last Supper by Leonardo da Vinci. The painting is 
+            located in the church of Santa Maria delle Grazie and is a UNESCO World Heritage Site.</p>
+    </div>
+
+    <div class="parallax image2">
+    </div>
+
+    <div class="text-container">
+        <h1>Milan Fashion Week</h1>
+        <p>Milan is also home to one of the world's most famous fashion weeks, 
+            where designers and fashion houses showcase their latest collections.</p>
+    </div>
+
+    <div class="parallax image3">
+    </div>
+
+    <div class="text-container">
+        <h1>La Scala</h1>
+        <p>
+            Milan is home to one of the world's most famous opera houses, La Scala. Built in 1778, 
+            it has hosted some of the greatest opera singers and conductors of all time.
+        </p>
+    </div>
+
+    <div class="parallax image4">
+    </div>
+
+
+    <div class="text-container">
+        <p id="motivational">
+            Experience the allure and excitement of Milan, a city where history, 
+            culture, fashion, and innovation meet to create an unforgettable journey.
+        </p>
+    </div>
+
+
+
+    <div class="pictures-container">
+        <picture>
+            <source media="(max-width: 1070px)" srcset="/images/milanoview_small.jpg">
+            <source media="(max-width: 1500px)" srcset="/images/milanCity_medium.jpg">
+            <img src="images/milanCat_medium.jpg" class="parallax image1" alt="">
+          </picture>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+          <h4>By Bernardo Taciano | a22107478 | Engenharia Informática</h3>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/5221ab0d00.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>
